@@ -44,10 +44,8 @@ int main(int argc, char *argv[]){
         ImGui::NewFrame();
 
         // Your GUI code here...
-        // ...
-
         bool my_tool_active = true;
-        float my_color[4] = { 1.0, 0.5, 0.0, 1.0 };
+        float my_color[4];// = { 1.0, 0.5, 0.0, 1.0 };
 
 
         // Create a window called "My First Tool", with a menu bar.
