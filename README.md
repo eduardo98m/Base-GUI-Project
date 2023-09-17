@@ -6,6 +6,16 @@ This project serves as a base for creating GUI applications using C++, Dear ImGu
 
 ## Dependencies
 
+First you have to get the imgui, implot and glfw repositories. You can do this by clonning the 
+
+```bash
+chmod +x getThirdParty.sh
+```
+
+```bash
+./getThirdParty.sh
+```
+
 Before you can build this project, you need to install some dependencies. You can install these packages using the following commands:
 
 For the glfw backend you will need:

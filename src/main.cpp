@@ -45,7 +45,7 @@ int main(int argc, char *argv[]){
 
         // Your GUI code here...
         bool my_tool_active = true;
-        float my_color[4];// = { 1.0, 0.5, 0.0, 1.0 };
+        float my_color[4];
 
 
         // Create a window called "My First Tool", with a menu bar.
@@ -74,7 +74,7 @@ int main(int argc, char *argv[]){
         // Display contents in a scrolling region
         ImGui::TextColored(ImVec4(1,1,0,1), "Important Stuff");
         ImGui::BeginChild("Scrolling");
-        for (int n = 0; n < 50; n++)
+        for (int n = 0; n < 10; n++)
             ImGui::Text("%04d: Some text", n);
         ImGui::EndChild();
         ImGui::End();
@@ -91,7 +91,7 @@ int main(int argc, char *argv[]){
         glfwSwapBuffers(window);
     }
 
-      // Cleanup
+    // Cleanup
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();
@@ -100,6 +100,4 @@ int main(int argc, char *argv[]){
     glfwTerminate();
 
     return 0;
-
-    
 }
